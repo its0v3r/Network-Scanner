@@ -2,7 +2,7 @@
 
 ## What is this script?
 
-Description: this is a simple network scanner created with Python. This code is heavily based on the udemy course "Learn Python & Ethical Hacking From Scratch" from the tutors "Zaid Sabih" and "z Security" (https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/)
+This is a simple network scanner created with Python. This code is heavily based on the udemy course "Learn Python & Ethical Hacking From Scratch" from the tutors "Zaid Sabih" and "z Security" (https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/)
 
 ## Commented code
 
