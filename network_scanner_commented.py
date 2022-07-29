@@ -76,4 +76,4 @@ scan_result = scan(args.target)
 if len(scan_result) != 0:
     print_result(scan_result)
 else:
-    print("We couldn't find any hosts with the provided IP address (" + {args.target} + ")")
+    print("We couldn't find any hosts with the provided IP address (" + args.target + ")")
