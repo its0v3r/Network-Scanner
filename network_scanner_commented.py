@@ -4,7 +4,9 @@
 #
 # Author: Matheus Heidemann
 #
-# Description: this is a simple network scanner created with Python. To scan the network, the user bacically needs to provide an valid IPv4 address and the CIDR value (Example: 192.168.0.1/24). This code is heavily based on the udemy course "Learn Python & Ethical Hacking From Scratch" from the tutors "Zaid Sabih" and "z Security" (https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/)
+# Description: this is a simple network scanner created with Python. To scan the network, the user bacically needs to provide an valid IPv4 address 
+# and the CIDR value (Example: 192.168.0.1/24). This code is heavily based on the udemy course "Learn Python & Ethical Hacking From Scratch" from 
+# the tutors "Zaid Sabih" and "z Security" (https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/).
 #
 # 28 July 2022
 #
@@ -45,8 +47,11 @@ def getArguments():
 def scan(ip):
     arp_request = scapy.ARP(pdst=ip)  # IP source
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")  # ARP destination
-    arp_request_broadcast = arp_request/broadcast
+    arp_request.show()
+    broadcast.show()
+    arp_request_broadcast = broadcast/arp_request
     answered_list = scapy.srp(arp_request_broadcast, timeout=1, verbose=False)[0]
+    print(answered_list)
     client_list = []
 
     for element in answered_list:
@@ -58,10 +63,10 @@ def scan(ip):
 
 # Function to print the results
 def print_result(client_list):
-    print("IP\t\tMAC Address")
-    print("-----------------------------------")
+    print("IP\t\t\tMAC Address")
+    print("--------------------------------------")
     for client in client_list:
-        print(f"{client_list['ip']}\t\t{client_list['mac']}")
+        print(client['ip'] + "\t\t" + client['mac'])
 
 
 # PROGRAM
@@ -71,4 +76,4 @@ scan_result = scan(args.target)
 if len(scan_result) != 0:
     print_result(scan_result)
 else:
-    print(f"We couldn't find any hosts with the provided IP address ({args.target})")
+    print("We couldn't find any hosts with the provided IP address (" + {args.target} + ")")
