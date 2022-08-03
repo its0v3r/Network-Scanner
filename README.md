@@ -10,9 +10,9 @@ There is one .py file with the code fully commented (for educational purposes) a
 
 ## How to use the script?
 
-To scan the network, the user bacically needs to provide an valid IPv4 address and the CIDR value (Example: 192.168.0.1/24).
-This script needs to run as sudo or root, otherwise the user will get an error.
-This code is meant to work with Python3.
+- To scan the network, the user bacically needs to provide an valid IPv4 address and the CIDR value (Example: 192.168.0.1/24).
+- This script needs to run as sudo or root, otherwise the user will get an error.
+- This code is meant to work with Python3.
 
 Example 1 - Specifing the IPv4 and the CIDR:
 
