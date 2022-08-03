@@ -10,7 +10,8 @@ There is one .py file with the code fully commented (for educational purposes) a
 
 ## How to use the script?
 
-- To scan the network, the user bacically needs to provide an valid IPv4 address and the CIDR value (Example: 192.168.0.1/24).
+- To scan the network, the user bacically needs to provide an valid IPv4 address and the CIDR value (Example: 192.168.0.1/24). This can be done by using the argument -t --target.
+- If the user don't pass the -t --target argument, the script will ask for the user to input the pending information.
 - This script needs to run as sudo or root, otherwise the user will get an error.
 - This code is meant to work with Python3.
 
