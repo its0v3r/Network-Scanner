@@ -6,7 +6,7 @@ This is a simple network scanner created with Python. This code is heavily based
 
 ## Commented code
 
-There is one .py file with the code fully commented (for educational purposes) and another .py file that contains only the code with necessary comments.
+There is one .py file with the code fully commented (for educational purposes) and another .py file that contains only the code with necessary comments (if you don't see both files, it's because it is in progress).
 
 ## How to use the script?
 
