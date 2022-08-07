@@ -1,4 +1,4 @@
-# Python Network Scanner 1.0.0
+# Network Scanner 1.0.0
 
 ## What is this script?
 
