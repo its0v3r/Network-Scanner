@@ -4,6 +4,9 @@
 
 This is a simple network scanner created with Python. This code is heavily based on the udemy course "Learn Python & Ethical Hacking From Scratch" from the tutors "Zaid Sabih" and "z Security" (https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/)
 
+[![Travis branch](https://img.shields.io/cran/l/devtools.svg)](https://github.com/its0v3r/Network-Scanner/blob/master/LICENSE)
+[![Travis branch](https://img.shields.io/badge/made%20with-%3C3-red.svg)](https://github.com/its0v3r/Network-Scanner)
+
 ## Commented code
 
 There is one .py file with the code fully commented (for educational purposes) and another .py file that contains only the code with necessary comments (if you don't see both files, it's because it is in progress).
